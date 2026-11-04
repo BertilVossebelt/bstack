@@ -1,6 +1,6 @@
 ---
 name: bstack-orient
-description: Explains the code around a ticket before any decision is made. Gives a short rundown in Simplified Technical English with file:line links, so the user can read the code with a map in mind. Use at the start of a ticket in an area the user does not know yet, before /bstack-decide.
+description: Explains the code around a ticket before any decision is made. Gives a short rundown in Simplified Technical English with file:line links, so the user can read the code with a map in mind. Step 2 of the ticket flow. Use after /bstack-ticket, before /bstack-decide.
 ---
 
 # /bstack-orient

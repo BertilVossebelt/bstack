@@ -1,6 +1,6 @@
 ---
 name: bstack-decide
-description: Turns a ticket into decisions the user makes before any code is written. Finds where similar logic already is, lists the open decisions, then stops. Use at the start of each ticket, unless the user says to skip it.
+description: Turns a ticket into decisions the user makes before any code is written. Finds where similar logic already is, lists the open decisions, then stops. Step 3 of the ticket flow. Use after /bstack-orient, or when the user asks for the decisions on a ticket. Run it before /bstack-build, unless the user says to skip it.
 ---
 
 # /bstack-decide
@@ -13,6 +13,8 @@ Point to evidence: file:line, existing patterns. Do not just state conclusions.
 
 - Get the ticket. Follow [TICKET.md](../bstack/TICKET.md).
 - Answer from the code what the code can answer.
+- If the user gave notes with the ticket, the notes are the design. Do not list alternatives that contradict them. Raise only gaps that the notes leave open, or real conflicts with the code.
+- Do not put a case out of scope because of a guess, such as "this rarely happens". Cover the case, or ask the user. If you ask, call it an assumption.
 - For each rule in the ticket, find which system it applies to: this API, a client, a front-end, a CLI. Read the lines around it. Only rules for the system you change are requirements.
 - Before you report a conflict in the ticket or the user's notes, quote both lines. Read their context. Report it only if it is still a conflict.
 - Find where the code already makes similar values or behaviour: pipelines, services, calculators, mappers.

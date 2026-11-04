@@ -75,7 +75,7 @@ ticket ──▶ orient ──▶ decide ──▶ build
 | 3. `decide` | the open choices, each with a pick, an alternative and what it costs          | confirm or change each choice     |
 | 4. `build`  | a short plan to check, then the change and what was verified                  | say go, then read the change      |
 
-Each step reads only what the one before it settled. So `orient` maps the code
+Each step builds on what the one before it settled. So `orient` maps the code
 for the ask you understood, `decide` asks only what the code does not answer, and
 `build` writes only what you confirmed.
 

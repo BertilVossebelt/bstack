@@ -1,6 +1,6 @@
 ---
 name: bstack-ticket
-description: Explains what a ticket asks before any code is read. Gives a short rundown in Simplified Technical English of who wants what and why, with one concrete example. Use at the start of a ticket, before /bstack-orient.
+description: Explains what a ticket asks before any code is read. Gives a short rundown in Simplified Technical English of who wants what and why, with one concrete example. Step 1 of the ticket flow. Use at the start of a ticket, before /bstack-orient.
 ---
 
 # /bstack-ticket
