@@ -12,6 +12,7 @@ Point to evidence: file:line, existing patterns. Do not just state conclusions.
 ## Investigate (for yourself, not for the output)
 
 - Get the ticket. Follow [TICKET.md](../bstack/TICKET.md).
+- Read the notes file and add the user's answers since the last step. Follow [NOTES.md](../bstack/NOTES.md).
 - Answer from the code what the code can answer.
 - If the user gave notes with the ticket, the notes are the design. Do not list alternatives that contradict them. Raise only gaps that the notes leave open, or real conflicts with the code.
 - Do not put a case out of scope because of a guess, such as "this rarely happens". Cover the case, or ask the user. If you ask, call it an assumption.
@@ -71,5 +72,7 @@ The user must be able to read it in 30 seconds. Write in Simplified Technical En
   - All decisions are for the user. Do not address questions to the ticket's author.
 - **Settled:** max 5 points of one short sentence each. Omit the section if it is empty.
 - Do not use tables. Do not describe current behaviour beyond what one decision needs. Do not add a closing summary.
+
+Write the **Decisions** section of the notes file. Mark each decision "(not confirmed)". Follow [NOTES.md](../bstack/NOTES.md). Then add the `Notes:` link line.
 
 End with one line: "Confirm or change these. Next: /bstack-build. Optional first: /bstack-spec (a spec for the team), /bstack-review decide (a fresh check of the decisions)."

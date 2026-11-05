@@ -9,7 +9,7 @@ Implement the decisions the user confirmed in /bstack-decide.
 
 ## Steps
 
-1. Use the confirmed /bstack-decide decisions. Do not open them again.
+1. Read the notes file and add the user's answers since the last step. Follow [NOTES.md](../bstack/NOTES.md). Mark the decisions the user confirmed as "(confirmed)". Use the confirmed decisions. Do not open them again.
 2. Before you write code, show the plan (see **Plan**). Wait for the user's go. The plan is a quick check, not a new design step. Skip it only if the user says so.
 3. Make the smallest change that does the job. Follow **Code style**.
 4. Before you verify, check each added or changed line against each rule in **Code style**, one by one. Code that you copy from an existing pattern must follow these rules too. If the pattern breaks a rule, do not copy that part.
@@ -34,6 +34,8 @@ Write in Simplified Technical English. The user must be able to read it in 15 se
 - **Plan:** one line for each file or place, in the order you change them. Say what changes, not how. Max 6 lines.
 - **Not doing:** things the user could expect but that this build leaves out. Give each one its reason or decision number. Never list something nobody would expect. Omit the section if it is empty.
 - Each line comes from the confirmed decisions. If the plan needs a new choice, ask it as in step 5.
+
+Write the plan lines and **Not doing** to the **Build** section of the notes file, as open checkboxes. Then add the `Notes:` link line.
 
 End the plan with one line: "Say go, or change the plan."
 
@@ -68,4 +70,6 @@ Write in Simplified Technical English. Read the rules in [STE.md](../bstack/STE.
 - Add **Not done:** only if a step was skipped or failed.
 - Do not add a closing summary.
 
-End with one line: "Optional: /bstack-review build (a fresh check of the change)."
+Tick each plan line that is done in the **Build** section. Add **Verified**. Then add the `Notes:` link line.
+
+End with one line: "Next: /bstack-commit. Optional first: /bstack-review build (a fresh check of the change)."

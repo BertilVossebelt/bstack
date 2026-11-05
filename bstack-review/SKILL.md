@@ -15,6 +15,9 @@ Review the decisions or the build with fresh eyes. Report findings. Do not fix a
 
 ## How
 
+- Read the notes file. Follow [NOTES.md](../bstack/NOTES.md). Take the confirmed decisions from it.
+- Do not give the notes file to the subagent. It holds reasons that the subagent must not see.
+
 - Run the review in a fresh subagent with an empty context. Then it does not share the reasoning that made the work.
 - Do not use a fork or a helper that sees this conversation.
 - If you cannot start such a subagent, say so in one line. Then do the review yourself, with the same limits.
@@ -66,4 +69,6 @@ Write in Simplified Technical English. Read the rules in [STE.md](../bstack/STE.
 - **Questions:** only points the reviewer cannot decide from the ticket or the code. Omit the section if it is empty.
 - Order the findings by impact, highest first.
 
-End with one line: "Tell me which findings to fix. After a decide review, next: /bstack-build."
+Write the **Review** section of the notes file. Mark each finding "open". When the user picks fixes later, change them to "fix" or "no fix". Follow [NOTES.md](../bstack/NOTES.md). Then add the `Notes:` link line.
+
+End with one line: "Tell me which findings to fix. After a decide review, next: /bstack-build. After a build review, next: /bstack-commit."

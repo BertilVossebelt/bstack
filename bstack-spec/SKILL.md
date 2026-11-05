@@ -1,15 +1,16 @@
 ---
 name: bstack-spec
-description: Writes a spec of a ticket for the team, from the decisions confirmed in /bstack-decide. Gives copyable Markdown in Simplified Technical English with one concrete example, ready to paste into the issue tracker. Optional step. Use when the user asks for a spec to share.
+description: Writes a spec of a ticket for the team, from the decisions confirmed in /bstack-decide. Gives copyable Markdown in Simplified Technical English with one concrete example, then offers to add it to the ticket description. Optional step. Use when the user asks for a spec to share.
 ---
 
 # /bstack-spec
 
-Write the confirmed decisions as a spec that the team can read cold. Do not write code. Do not edit files. Never post the spec. The user posts it. When you are done, wait for the user.
+Write the confirmed decisions as a spec that the team can read cold. Do not write code. Do not edit files. Show the spec first. Add it to the ticket only after the user says yes (see **Add to the ticket**). When you are done, wait for the user.
 
 ## Investigate (for yourself, not for the output)
 
 - Get the ticket. Follow [TICKET.md](../bstack/TICKET.md).
+- Read the notes file and add the user's answers since the last step. Follow [NOTES.md](../bstack/NOTES.md).
 - Use the decisions the user confirmed in /bstack-decide and later in the conversation. Do not open them again. Do not add decisions of your own.
 - If the spec needs a point that is not decided, ask before you write.
 - Take example values from real data or the ticket. Do not guess them. If you use a placeholder, tell the user outside the spec.
@@ -44,4 +45,17 @@ Shape:
 
 Check each sentence against the STE rules. Check that the spec reads cold for someone who missed the discussion.
 
-End with one line: "Paste it into the ticket. Next: /bstack-build. Optional first: /bstack-review decide (a fresh check of the decisions)."
+If you have a tool that can edit the ticket, end with one line: "Add this to the ticket description? Next: /bstack-build. Optional first: /bstack-review decide (a fresh check of the decisions)." Otherwise, end with: "Paste it into the ticket. Next: /bstack-build. Optional first: /bstack-review decide (a fresh check of the decisions)."
+
+If the build is already done (see the **Build** section of the notes file), use this "Next" instead: "Next: /bstack-commit. Optional first: /bstack-review build (a fresh check of the change)."
+
+## Add to the ticket
+
+Do this only after the user says yes.
+
+1. Fetch the ticket description again, right before you edit. Someone may have changed it.
+2. Add the spec below the existing description. Put an empty line between them. Never remove, change or reorder existing text.
+3. If the description already holds an older spec from this skill, ask the user first. Replace it only if they say so.
+4. Use the tracker's own edit tool, such as `save_issue` for Linear. If the tool can append or patch, use that, not a full replace.
+5. Fetch the description again. Check that the old text is still there, unchanged, and that the spec is below it. If not, tell the user at once and show the old text.
+6. Say in one line that the spec is in the ticket. Give the ticket link.

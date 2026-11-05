@@ -10,6 +10,7 @@ Help the user understand the ask. Read the ticket, not the code. Do not write co
 ## Investigate (for yourself, not for the output)
 
 - Get the ticket. Follow [TICKET.md](../bstack/TICKET.md).
+- Read the notes file and add the user's answers since the last step. Follow [NOTES.md](../bstack/NOTES.md).
 - Find who created the ticket. If the user created it, do not explain their own intent back to them. Keep **Who and why** to one line.
 - For each rule in the ticket, find which system it applies to: this API, a client, a front-end, a CLI. Read the lines around it. A rule for another system is not part of the ask. It is not a gap.
 - Find gaps the same way each time. Go through each point. Note what the ticket does not answer:
@@ -67,7 +68,7 @@ Returns a CSV with only invoices paid in October or later.
   - Ask plain questions to the user. Do not address them to the author. The user answers them or forwards them.
   - No questions about how it gets built (matching rules, escaping, performance). Those belong in /bstack-decide.
   - Number the questions. Omit the section if there are none.
-- Put nothing after **Unclear** except the closing line.
+- Put nothing after **Unclear** except the `Notes:` line and the closing line.
 
 ## Simplified Technical English
 
@@ -76,5 +77,7 @@ Write in Simplified Technical English. Read the rules in [STE.md](../bstack/STE.
 ## Before sending
 
 Check that no **Unclear** question is about how it gets built. Remove such a question. /bstack-decide covers it.
+
+Write the **Ticket** section of the notes file. Put the unclear points under Answers as open questions. Follow [NOTES.md](../bstack/NOTES.md). Then add the `Notes:` link line.
 
 End with one line: "Answer what is unclear, then run /bstack-orient." If nothing is unclear, end with "Run /bstack-orient."
