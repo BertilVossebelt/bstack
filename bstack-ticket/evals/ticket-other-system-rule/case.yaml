@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: ticket-other-system-rule
+expected_outcome: |
+  Who and why stays one line because the user wrote the ticket. The CLI spinner rule is
+  treated as another system: not part of the ask and not a gap. No question asks about the
+  date format, which the ticket answers.

@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: orient-overdue-filter
+expected_outcome: |
+  A Path that starts at the export route, follows the request into build_loan_query and
+  ends where the CSV is written, with line links, plus Related entries with step numbers.
+  No decisions.
+context:
+  scaffold_script: place-files.sh
